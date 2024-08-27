@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "bot.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/bot.py"
+    }
+  ],
+  "env": {
+    "TELEGRAM_TOKEN": "7479536081:AAHql3-6YIK3wa7godG_Ckmd_D_t0oNEp5M"
+  }
+}
