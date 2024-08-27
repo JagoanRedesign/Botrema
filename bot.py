@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request
 from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
+from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, CallbackContext
 
 app = Flask(__name__)
 TOKEN = os.getenv("TELEGRAM_TOKEN")
